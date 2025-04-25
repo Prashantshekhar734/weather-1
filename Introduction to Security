@@ -1,0 +1,104 @@
+# Introduction to Security
+## Table of Contents
+- [1. Key Security Concepts](#1-key-security-concepts)
+  - [1.1 Identity](#11-identity)
+  - [1.2 Confidentiality](#12-confidentiality)
+  - [1.3 Integrity](#13-integrity)
+- [2. Role-Based Access Control (RBAC)](#2-role-based-access-control-rbac)
+- [3. Single Sign-On (SSO)](#3-single-sign-on-sso)
+- [4. Proxies & Firewalls](#4-proxies--firewalls)
+- [5. Real-World Examples](#5-real-world-examples)
+- [6. References](#6-references)
+--
+## 1. Security ke Basic Concepts
+
+### 1.1 Pehchaan (Identity)
+Identity ka matlab hai kisi user ya system ka asli hona. Jab hum kisi system me login karte hain, hum apni pehchaan batate hain.
+
+**Example:** Username aur password use karke email account open karna.
+
+---
+
+### 1.2 Raazdari (Confidentiality)
+Iska matlab hai ki information sirf usi insaan tak pahuchni chahiye jisko uska access mila ho.
+
+**Example:** WhatsApp ka end-to-end encryption—sirf sender aur receiver message padh sakte hain.
+
+---
+
+### 1.3 Data ki Sudhta (Integrity)
+Data waisa ka waisa hi hona chahiye jaisa originally tha—beech mein koi badlav nahi hona chahiye.
+
+**Example:** File download ke baad uska hash verify karna (jaise SHA-256) taake confirm ho ki file change nahi hui.
+
+---
+
+## 2. Role-Based Access Control (RBAC)
+
+RBAC ka matlab hai ki users ko unke kaam ke hisaab se access diya jata hai. Har role ke apne rules aur permissions hote hain.
+
+**Example:** Bank me manager ko full account access hota hai, par cashier sirf cash entry dekh sakta hai.
+
+**Fayde:**
+- Easy permission management  
+- Kam galti ka chance  
+- Secure aur organized system
+
+---
+
+## 3. Single Sign-On (SSO)
+
+SSO ek technique hai jisme user sirf ek baar login karta hai aur fir multiple apps ya websites ko bina dobara login kiye access kar sakta hai.
+
+**Example:** Google account se login karne par Gmail, YouTube, Drive sab chal jata hai.
+
+**Fayde:**
+- Time bachta hai  
+- Password bhoolne ka chance kam  
+- Centralized security control
+
+---
+
+## 4. Proxy Servers aur Firewalls
+
+### Proxy Server
+Proxy ek beech ka server hota hai jo user aur internet ke beech ka kaam karta hai. Ye user ki identity chhupata hai, ya access ko control karta hai.
+
+**Example:** School me proxy use hota hai taake students gaming sites na kholen.
+
+### Firewall
+Firewall ek security tool hai jo decide karta hai ki kaunsa network traffic allow hoga aur kaunsa block hoga.
+
+**Example:** Company ka firewall har unknown IP address ko block kar deta hai.
+
+---
+
+## 5. Real-life Security Incidents
+
+### Target Data Breach (2013)
+Hackers ne ek third-party vendor ke through Target company ke servers ko hack kiya. 40 million se zyada logon ka credit card data chori hua.
+
+**Seekh:** Third-party access par control hona chahiye.
+
+---
+
+### Equifax Breach (2017)
+Ek software me vulnerability chhodi gayi thi jo patch nahi hui. Hackers ne 147 million logon ka data chura liya.
+
+**Seekh:** Regular software updates aur patching zaroori hai.
+
+---
+
+### SolarWinds Attack (2020)
+Attackers ne trusted software update me malware daal diya jisse thousands companies effect hui.
+
+**Seekh:** Software updates bhi verify karne chahiye. Zero Trust model adopt karna chahiye.
+
+---
+
+## 6. Reference Links
+
+- [OWASP Security Concepts](https://owasp.org)  
+- [NIST Guidelines on Access Control](https://csrc.nist.gov/publications/detail/sp/800-162/final)  
+- [What is SSO – Okta](https://www.okta.com/identity-101/what-is-single-sign-on/)  
+- [Firewalls – Cisco Guide](https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html)
